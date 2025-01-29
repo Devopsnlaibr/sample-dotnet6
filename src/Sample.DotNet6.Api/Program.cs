@@ -12,6 +12,8 @@ builder.Services.AddCors();
 
 builder.Setup();
 
+
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
