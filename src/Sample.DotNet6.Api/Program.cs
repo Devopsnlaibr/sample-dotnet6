@@ -21,8 +21,6 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sample API .NET 6.0", Version = "v1" });
 });
 
-
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
