@@ -1,0 +1,15 @@
+name: Trigger Jenkins Build
+
+on:
+  push:
+    branches:
+      - main  # Change this to match your branch
+
+jobs:
+  trigger-jenkins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Jenkins Job
+        run: |
+          curl -X POST "http://52.169.200.126:8080/job/ProjectB/buildWithParameters?token=MY-SECRET-TOKEN" \
+               --user "jenkinsadmin:11cfc1dca012142cda001ab0ba80b0d0c3"
