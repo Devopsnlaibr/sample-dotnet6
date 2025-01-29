@@ -13,7 +13,12 @@ builder.Services.AddCors();
 builder.Setup();
 
 builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
+
+
+
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sample API .NET 6.0", Version = "v1" });
