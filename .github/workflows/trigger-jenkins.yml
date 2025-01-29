@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Trigger Jenkins Job
         run: |
-          curl -X POST "http://52.169.200.126:8080/job/ProjectB/buildWithParameters?token=MY-SECRET-TOKEN" \
+          curl -X POST "http://52.169.200.126:8080/job/ProjectB/build?token=my-secret-token" \
                --user "jenkinsadmin:11cfc1dca012142cda001ab0ba80b0d0c3"
